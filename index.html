@@ -12,7 +12,7 @@
     <title>Citizen Pro Calc</title>
     
     <style>
-        /* यहाँ आपका पुराना पूरा CSS रहेगा (जो मैंने पिछले मैसेज में दिया था) */
+    
         body { background-color: #121212; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; font-family: Arial, sans-serif; overflow: hidden; }
         .calculator { background: #000; padding: 20px; border-radius: 25px; width: 90%; max-width: 380px; border: 3px solid #333; box-shadow: 0 20px 50px rgba(0,0,0,0.9); }
         .display-container { position: relative; background: #1a1a1a; border: 2px solid #00ffcc; border-radius: 12px; margin-bottom: 20px; box-shadow: 0 0 15px #00ffcc, inset 0 0 5px #00ffcc; }
@@ -74,12 +74,12 @@
 </div>
 
 <script>
-    // 1. Service Worker Register करें (Install बटन के लिए जरूरी)
+
     if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('sw.js');
     }
 
-    // 2. यहाँ आपका पुराना पूरा JavaScript रहेगा (साउंड और कैलकुलेशन वाला)
+    
     const screen = document.getElementById('display');
     const mInd = document.getElementById('memory-indicator');
     const gtInd = document.getElementById('gt-indicator');
